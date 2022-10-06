@@ -1,4 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
 
+<body>
+<h1> NETFLIX </h1>
 <?php
 
 $dir = 'movies';
@@ -36,6 +43,7 @@ for  ($i = 0; $i <count($files); $i++){
 echo "<table id = 'movies' cellpadding = 50>";
 echo "<tr class = 'odd'>";
 
+
 foreach ($movies as $movie_name => $info) {
 	// code...
 	$content = "<td><span class = 'name'> $movie_name</span><br />"
@@ -49,7 +57,15 @@ echo "</tr></table>";
 
 ?>
 
+</body>
+
+</html>
+
 <style>
+h1{
+	color: #fff;
+	text-align: center;
+}
 #movies{
 	background-color: #000;
 	color: #fff;
@@ -84,6 +100,7 @@ span.name{
 }
 body{
 	margin: 0;
-	padding: 0
+	padding: 0;
+	background-color: #141423;
 }
 </style>
